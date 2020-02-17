@@ -1,4 +1,4 @@
-import requests, os, json, base64, hashlib, hmac
+import requests, os, json, base64, hashlib, hmac, logging
 from requests.exceptions import HTTPError
 from item import Item
 
@@ -10,7 +10,19 @@ a secrets.json file.
 You have ~500 free requests on their site
 """
 # Item ID to test with called: Twist-Erase III Mechanical Pencil, (0.9mm), Black Barrel
-test_item_id = "072512099681"
+test_item_pen = "072512099681"
+test_item_milk = "093966000337" # Nature Valley half & half
+test_invalid_search = "0939660003370"
+
+def _config_logging_for_barcode(status=True, level='warning'):
+    """
+    Configures logigng. Defaul is on and set to warning level. Places log in current file. Can be overriden or change if need.
+    """
+    if status == True:
+        logging.basicConfig(filename='product_API.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        logging.debug('Logging is on')
+    else:
+        return "Logging for product API is off"
 
 
 def _set_secret(search_term, secrets_file='secrets.json'):
@@ -51,26 +63,21 @@ def _calc_signature(upc_code):
 def _create_item_object(item):
     """
     Creates an Item object out of the given request data
-    Returns: An Item object type. 
-    args: Requires a dict/JSON type request string
+    Due to API limitations only creates an object with name and UPC
+    :args: Requires a dict/JSON type request string. 
+    :return: Item object. 
     """
 
-    if item['description'] is  '': 
-        pass
-    if item['msrp'] is  '':
-        pass
-    if item['category'] is  '': 
-        pass
-
-    #item_obj = Item(name=item['name'])
-
-    #for i in item_json:
-     #   print("{item} : {value}".format(item=i, value=item_json[i]))
-
+    if item['description'] == '': 
+        return "Item does not have a valid description"
+    else:
+        product = Item(name=item['description'], upc=item['upc_code'])
+    
+    return product
 
 def query_for_item(item):
     """
-    Queries the DB for the item
+    Queries the DB for the item using Digit Eyes API
     :args:Takes a UPC code to search for
     :returns: An item object w/ basic information
     """
@@ -83,12 +90,18 @@ def query_for_item(item):
         response = requests.get(query_string)
         response.raise_for_status()
     except HTTPError as http_err: 
-        return "There was an error with your request ", http_err
+        logging.error("There was an error with the query: {err}".format(err=http_err))
+        return Item("Invalid Item")
     except Exception as e: 
-        return "There was an error with the request ", e
+        logging.error("There was an exception processing the API: {err}".format(err=e))
+        return Item("Invalid Item")
     else:
-        #return _create_item_object(response.json())
-        return response.json()
-        # Pass to another function to clean response or pass as response object? 
+        return _create_item_object(response.json())
 
-print(query_for_item(test_item_id))
+
+def _cerate_tests_later():
+    # Place in __init__ file later:
+    _config_logging_for_barcode() 
+    #print(query_for_item(test_item_pen))
+    print(query_for_item(test_invalid_search).name)
+

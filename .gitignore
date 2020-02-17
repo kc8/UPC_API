@@ -6,8 +6,10 @@ secrets.json
 #ignore venv in the future can remove this comment for it to be ignored
 #lists/ 
 
+# Other settings and files to ignore
 .vscode/
-
+# Logging gets created when running the modules
+product_API.log 
 #TEMPLATE OUTLINE BELOW:
 # Byte-compiled / optimized / DLL files
 __pycache__/

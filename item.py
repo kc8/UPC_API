@@ -6,6 +6,7 @@ This could be a scanned barcoded item or from antoher source
 class Item:
 
     def __init__(self, name, 
+                upc=None, 
                 price=None, 
                 alias='_blank_',
                 category='unknown', 
@@ -14,6 +15,7 @@ class Item:
         Creates an item object.
         :args:
             name: Name of the item
+            upc: UPC of item for additional lookups default is None. 
             price: Optional Price of the item, if known otherwise $0
             alias: Optional alias for the item otherwise _blank_ is used.
             category: Categorize the item (Produce, Office Supplies, etc.)

@@ -1,0 +1,453 @@
+{
+    "status": 1,
+    "product": {
+        "id": "0093966000337",
+        "nutrition_score_debug": "no score when the product does not have a category",
+        "nutriments": {
+            "sodium_value": 0.0330000033333328,
+            "cholesterol": 0.033,
+            "salt_value": 0.082500008333332,
+            "fat": 11.67,
+            "energy-kcal_unit": "kcal",
+            "trans-fat_unit": "g",
+            "iron_serving": 0,
+            "carbohydrates_unit": "g",
+            "proteins_value": 3.33,
+            "energy_unit": "kcal",
+            "calcium": 0.133,
+            "energy-kcal_value": 133.33333333333,
+            "sugars_value": 3.33,
+            "vitamin-c_value": 0,
+            "vitamin-c_serving": 0,
+            "fiber_value": 0,
+            "vitamin-c": 0,
+            "energy-kcal_100g": 558,
+            "fat_serving": 3.5,
+            "iron_100g": 0,
+            "salt_serving": 0.0248,
+            "calcium_100g": 0.133,
+            "energy-kcal": 558,
+            "sugars": 3.33,
+            "calcium_value": 133,
+            "cholesterol_serving": 0.0099,
+            "trans-fat": 0,
+            "salt": 0.082500008333332,
+            "energy_value": 133.33333333333,
+            "vitamin-a_100g": 9.99e-05,
+            "iron": 0,
+            "fat_value": 11.67,
+            "proteins_unit": "g",
+            "saturated-fat_100g": 6.67,
+            "proteins": 3.33,
+            "vitamin-a_unit": "IU",
+            "sugars_100g": 3.33,
+            "sodium": 0.0330000033333328,
+            "sodium_100g": 0.0330000033333328,
+            "cholesterol_100g": 0.033,
+            "sodium_unit": "g",
+            "sodium_serving": 0.0099,
+            "carbohydrates_serving": 0.999,
+            "saturated-fat": 6.67,
+            "iron_value": 0,
+            "saturated-fat_serving": 2,
+            "fiber": 0,
+            "cholesterol_value": 33,
+            "vitamin-c_100g": 0,
+            "calcium_unit": "mg",
+            "cholesterol_unit": "mg",
+            "trans-fat_value": 0,
+            "saturated-fat_value": 6.67,
+            "vitamin-a_value": 333,
+            "carbohydrates_value": 3.33,
+            "carbohydrates": 3.33,
+            "energy_100g": 558,
+            "salt_unit": "g",
+            "proteins_100g": 3.33,
+            "carbohydrates_100g": 3.33,
+            "fiber_100g": 0,
+            "energy": 558,
+            "calcium_serving": 0.0399,
+            "fiber_serving": 0,
+            "vitamin-c_unit": "mg",
+            "sugars_unit": "g",
+            "sugars_serving": 0.999,
+            "trans-fat_100g": 0,
+            "saturated-fat_unit": "g",
+            "fat_unit": "g",
+            "trans-fat_serving": 0,
+            "energy-kcal_serving": 167,
+            "vitamin-a": 9.99e-05,
+            "iron_unit": "mg",
+            "fat_100g": 11.67,
+            "fiber_unit": "g",
+            "salt_100g": 0.082500008333332,
+            "vitamin-a_serving": 3e-05,
+            "proteins_serving": 0.999,
+            "energy_serving": 167
+        },
+        "ingredients_hierarchy": [
+            "en:grade a milk",
+            "en:cream",
+            "en:dairy"
+        ],
+        "ingredients": [
+            {
+                "labels": "en:organic",
+                "text": "grade a milk",
+                "rank": 1,
+                "id": "en:grade a milk"
+            },
+            {
+                "labels": "en:organic",
+                "text": "cream",
+                "vegan": "no",
+                "vegetarian": "yes",
+                "rank": 2,
+                "id": "en:cream"
+            }
+        ],
+        "sortkey": 201580664792,
+        "allergens_from_user": "(en) ",
+        "data_quality_errors_tags": [],
+        "unknown_ingredients_n": 1,
+        "data_quality_info_tags": [],
+        "interface_version_modified": "20150316.jqm2",
+        "codes_tags": [
+            "code-13",
+            "0093966000xxx",
+            "009396600xxxx",
+            "00939660xxxxx",
+            "0093966xxxxxx",
+            "009396xxxxxxx",
+            "00939xxxxxxxx",
+            "0093xxxxxxxxx",
+            "009xxxxxxxxxx",
+            "00xxxxxxxxxxx",
+            "0xxxxxxxxxxxx"
+        ],
+        "product_name": "Half & half",
+        "rev": 4,
+        "countries_hierarchy": [
+            "en:united-states"
+        ],
+        "ingredients_ids_debug": [
+            "organic-grade-a-milk",
+            "organic-cream"
+        ],
+        "additives_n": 0,
+        "_keywords": [
+            "region",
+            "producer",
+            "organic",
+            "valley",
+            "of",
+            "pool",
+            "half",
+            "cooperative"
+        ],
+        "countries": "United States",
+        "additives_tags": [],
+        "last_image_t": 1580664791,
+        "nutrient_levels_tags": [],
+        "code": "0093966000337",
+        "ingredients_analysis_tags": [
+            "en:palm-oil-content-unknown",
+            "en:non-vegan",
+            "en:vegetarian-status-unknown"
+        ],
+        "additives_original_tags": [],
+        "misc_tags": [
+            "en:nutriscore-not-computed"
+        ],
+        "data_quality_warnings_tags": [
+            "en:ingredients-50-percent-unknown",
+            "en:serving-quantity-defined-but-quantity-undefined"
+        ],
+        "languages": {
+            "en:english": 3
+        },
+        "interface_version_created": "import_us_ndb.pl - version 2017/03/04",
+        "traces": "",
+        "brands_debug_tags": [],
+        "brands": "Organic Valley,  Cooperative Regions Of Organic Producer Pools",
+        "nutrient_levels": {},
+        "allergens": "",
+        "fruits-vegetables-nuts_100g_estimate": 0,
+        "last_editor": "kiliweb",
+        "sources": [
+            {
+                "id": "usda-ndb",
+                "fields": [
+                    "product_name_en",
+                    "brands",
+                    "countries",
+                    "serving_size",
+                    "ingredients_text_en",
+                    "nutrients.energy",
+                    "nutrients.proteins",
+                    "nutrients.fat",
+                    "nutrients.carbohydrates",
+                    "nutrients.fiber",
+                    "nutrients.sugars",
+                    "nutrients.calcium",
+                    "nutrients.iron",
+                    "nutrients.sodium",
+                    "nutrients.vitamin-c",
+                    "nutrients.vitamin-a",
+                    "nutrients.saturated-fat",
+                    "nutrients.trans-fat",
+                    "nutrients.cholesterol"
+                ],
+                "images": [],
+                "import_t": 1489097473,
+                "url": "https://api.nal.usda.gov/ndb/reports/?ndbno=45204883&type=f&format=json&api_key=DEMO_KEY"
+            }
+        ],
+        "editors_tags": [
+            "kiliweb",
+            "usda-ndb-import",
+            "yuka.VklRd0RvMWFxdmNud013aDR6cmI0L2twNDdEMmNrcWNNT1k2SVE9PQ"
+        ],
+        "ingredients_from_palm_oil_n": 0,
+        "image_nutrition_small_url": "https://static.openfoodfacts.org/images/products/009/396/600/0337/nutrition_en.4.200.jpg",
+        "countries_debug_tags": [],
+        "product_name_en": "Half & half",
+        "vitamins_prev_tags": [],
+        "last_edit_dates_tags": [
+            "2020-02-02",
+            "2020-02",
+            "2020"
+        ],
+        "update_key": "update_categories_taxonomy",
+        "states_hierarchy": [
+            "en:to-be-completed",
+            "en:nutrition-facts-completed",
+            "en:ingredients-completed",
+            "en:expiration-date-to-be-completed",
+            "en:packaging-code-to-be-completed",
+            "en:characteristics-to-be-completed",
+            "en:categories-to-be-completed",
+            "en:brands-completed",
+            "en:packaging-to-be-completed",
+            "en:quantity-to-be-completed",
+            "en:product-name-completed",
+            "en:photos-to-be-validated",
+            "en:photos-uploaded"
+        ],
+        "lang": "en",
+        "states_tags": [
+            "en:to-be-completed",
+            "en:nutrition-facts-completed",
+            "en:ingredients-completed",
+            "en:expiration-date-to-be-completed",
+            "en:packaging-code-to-be-completed",
+            "en:characteristics-to-be-completed",
+            "en:categories-to-be-completed",
+            "en:brands-completed",
+            "en:packaging-to-be-completed",
+            "en:quantity-to-be-completed",
+            "en:product-name-completed",
+            "en:photos-to-be-validated",
+            "en:photos-uploaded"
+        ],
+        "creator": "usda-ndb-import",
+        "countries_tags": [
+            "en:united-states"
+        ],
+        "amino_acids_tags": [],
+        "nutrition_grades_tags": [
+            "not-applicable"
+        ],
+        "languages_codes": {
+            "en": 3
+        },
+        "additives_debug_tags": [],
+        "ingredients_tags": [
+            "en:grade-a-milk",
+            "en:cream",
+            "en:dairy"
+        ],
+        "brands_tags": [
+            "organic-valley",
+            "cooperative-regions-of-organic-producer-pools"
+        ],
+        "additives_old_n": 0,
+        "pnns_groups_2_tags": [
+            "unknown",
+            "missing-category"
+        ],
+        "nucleotides_tags": [],
+        "lc": "en",
+        "informers_tags": [
+            "usda-ndb-import",
+            "yuka.VklRd0RvMWFxdmNud013aDR6cmI0L2twNDdEMmNrcWNNT1k2SVE9PQ",
+            "kiliweb"
+        ],
+        "ingredients_text_with_allergens_en": "Organic grade a milk, organic cream",
+        "nova_group_debug": "no nova group when the product does not have a category",
+        "traces_from_ingredients": "",
+        "allergens_hierarchy": [],
+        "ingredients_that_may_be_from_palm_oil_tags": [],
+        "data_sources_tags": [
+            "app-yuka",
+            "apps"
+        ],
+        "last_image_dates_tags": [
+            "2020-02-02",
+            "2020-02",
+            "2020"
+        ],
+        "other_nutritional_substances_tags": [],
+        "complete": 0,
+        "ingredients_original_tags": [
+            "en:grade a milk",
+            "en:cream"
+        ],
+        "traces_tags": [],
+        "ingredients_n": 2,
+        "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
+        "nutrition_data_per": "100g",
+        "ingredients_text_en": "Organic grade a milk, organic cream",
+        "completeness": 0.466666666666667,
+        "languages_tags": [
+            "en:english",
+            "en:1"
+        ],
+        "traces_from_user": "(en) ",
+        "serving_quantity": "30",
+        "ingredients_text_debug": "Organic grade a milk, organic cream",
+        "last_modified_by": "kiliweb",
+        "allergens_tags": [],
+        "additives_prev_original_tags": [],
+        "max_imgid": "1",
+        "ingredients_debug": [
+            "Organic grade a milk",
+            ",",
+            null,
+            null,
+            null,
+            " organic cream"
+        ],
+        "correctors_tags": [
+            "yuka.VklRd0RvMWFxdmNud013aDR6cmI0L2twNDdEMmNrcWNNT1k2SVE9PQ"
+        ],
+        "languages_hierarchy": [
+            "en:english"
+        ],
+        "pnns_groups_1_tags": [
+            "unknown",
+            "missing-category"
+        ],
+        "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
+        "ingredients_text": "Organic grade a milk, organic cream",
+        "additives_old_tags": [],
+        "vitamins_tags": [],
+        "last_modified_t": 1580664792,
+        "ingredients_from_palm_oil_tags": [],
+        "ingredients_text_with_allergens": "Organic grade a milk, organic cream",
+        "allergens_from_ingredients": "",
+        "unknown_nutrients_tags": [],
+        "pnns_groups_1": "unknown",
+        "minerals_tags": [],
+        "images": {
+            "1": {
+                "sizes": {
+                    "400": {
+                        "h": 400,
+                        "w": 140
+                    },
+                    "100": {
+                        "h": 100,
+                        "w": 35
+                    },
+                    "full": {
+                        "w": 421,
+                        "h": 1200
+                    }
+                },
+                "uploader": "kiliweb",
+                "uploaded_t": 1580664791
+            },
+            "nutrition_en": {
+                "geometry": "0x0--3--3",
+                "rev": "4",
+                "x1": "-1",
+                "y2": "-1",
+                "y1": "-1",
+                "normalize": null,
+                "imgid": "1",
+                "white_magic": null,
+                "angle": 0,
+                "x2": "-1",
+                "sizes": {
+                    "200": {
+                        "w": 70,
+                        "h": 200
+                    },
+                    "100": {
+                        "w": 35,
+                        "h": 100
+                    },
+                    "full": {
+                        "w": 421,
+                        "h": 1200
+                    },
+                    "400": {
+                        "w": 140,
+                        "h": 400
+                    }
+                }
+            }
+        },
+        "minerals_prev_tags": [],
+        "nucleotides_prev_tags": [],
+        "nova_group_tags": [
+            "not-applicable"
+        ],
+        "amino_acids_prev_tags": [],
+        "selected_images": {
+            "nutrition": {
+                "display": {
+                    "en": "https://static.openfoodfacts.org/images/products/009/396/600/0337/nutrition_en.4.400.jpg"
+                },
+                "small": {
+                    "en": "https://static.openfoodfacts.org/images/products/009/396/600/0337/nutrition_en.4.200.jpg"
+                },
+                "thumb": {
+                    "en": "https://static.openfoodfacts.org/images/products/009/396/600/0337/nutrition_en.4.100.jpg"
+                }
+            }
+        },
+        "created_t": 1489097473,
+        "pnns_groups_2": "unknown",
+        "nutrition_data_prepared_per": "100g",
+        "data_quality_tags": [
+            "en:ingredients-50-percent-unknown",
+            "en:serving-quantity-defined-but-quantity-undefined"
+        ],
+        "serving_size": "30 ml (2 Tbsp)",
+        "ingredients_n_tags": [
+            "2",
+            "1-10"
+        ],
+        "countries_lc": "en",
+        "checkers_tags": [],
+        "data_sources": "App - yuka, Apps",
+        "traces_hierarchy": [],
+        "image_nutrition_url": "https://static.openfoodfacts.org/images/products/009/396/600/0337/nutrition_en.4.400.jpg",
+        "ingredients_that_may_be_from_palm_oil_n": 0,
+        "image_nutrition_thumb_url": "https://static.openfoodfacts.org/images/products/009/396/600/0337/nutrition_en.4.100.jpg",
+        "photographers_tags": [
+            "kiliweb"
+        ],
+        "entry_dates_tags": [
+            "2017-03-09",
+            "2017-03",
+            "2017"
+        ],
+        "_id": "0093966000337",
+        "data_quality_bugs_tags": []
+    },
+    "status_verbose": "product found",
+    "code": "0093966000337"
+}
