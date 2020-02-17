@@ -1,13 +1,15 @@
 """
-Creates an object of the item.
+Class of the item searched for or retrived from the database. 
+This could be a scanned barcoded item or from antoher source
 """
 
 class Item:
 
     def __init__(self, name, 
-                price=00.00, 
+                price=None, 
                 alias='_blank_',
-                category='unknown'):
+                category='unknown', 
+                size=None):
         """
         Creates an item object.
         :args:
@@ -21,6 +23,17 @@ class Item:
         self.alias = alias
         self.price = price
         self.category = category
+        self.size = size
+        self.tax = None
+    
+    def __iter__(self):
+        """
+        Dunder iter functoin. Not yet fully implemented
+        """
+        pass
+
+    def __next__(self): 
+        pass
     
     def set_price(self, price): 
         """
@@ -46,3 +59,18 @@ class Item:
             new_category: Change the category of the item.
         """
         self.category = new_category 
+    
+    def calculate_tax(self, tax_percent):
+        """
+        Returns calculated tax and stores its. Price must be set first
+        :args: Tax percent in decimal form
+        :return: Tax + price or error
+        """
+        if self.price is not None:
+            try:
+                self.tax = (self.price * tax_percent) + self.price
+                return self.tax
+            except Exception as e:
+                return e 
+        else: 
+            return "Price not set"

@@ -3,8 +3,8 @@
 #Ignore the secrets file. Please create your own, instructions in read me
 secrets.json
 
-#ignore Windows venv
-lists/ 
+#ignore venv in the future can remove this comment for it to be ignored
+#lists/ 
 
 .vscode/
 

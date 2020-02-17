@@ -4,9 +4,10 @@ from item import Item
 
 """
 Module uses the UPC Database to query for items. Information 
-can be found here: 
-https://upcdatabase.org/
-https://upcdatabase.org/api-search-get
+API: http://www.digit-eyes.com/
+You can make an account on their site and get your keys, adding them to 
+a secrets.json file. 
+You have ~500 free requests on their site
 """
 # Item ID to test with called: Twist-Erase III Mechanical Pencil, (0.9mm), Black Barrel
 test_item_id = "072512099681"
@@ -44,7 +45,7 @@ def _calc_signature(upc_code):
     # Have to encode the auth_key and upc-code in UTF-8 before hasing
     auth_key = str(_set_secret('auth_key')).encode('utf-8')
     sha_hash = hmac.new(auth_key, str(upc_code).encode('utf-8'), hashlib.sha1)
-    return base64.b64encode(sha_hash.digest()).decode("utf-8") #Need to decode or else there will be a leading b' to reprsent bytes
+    return base64.b64encode(sha_hash.digest()).decode("utf-8") # Decode or there will be a leading b' representing bytes
 
 
 def _create_item_object(item):
@@ -53,11 +54,12 @@ def _create_item_object(item):
     Returns: An Item object type. 
     args: Requires a dict/JSON type request string
     """
-    if item['alias'] is not '': 
+
+    if item['description'] is  '': 
         pass
-    if item['msrp'] is not '':
+    if item['msrp'] is  '':
         pass
-    if item['category'] is not '': 
+    if item['category'] is  '': 
         pass
 
     #item_obj = Item(name=item['name'])

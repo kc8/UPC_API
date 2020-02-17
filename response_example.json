@@ -1,48 +1,49 @@
 {
-    'upc_code': '0072512099681',
-    'language': 'en',
-    'return_message': 'Success',
-    'gcp_gcp': '72512',
-    'formattedNutrition': {
-        'Additional Warnings': 's,
-        California Proposition 65'
+    "upc_code": "0072512099681",
+    "language": "en",
+    "return_message": "Success",
+    "gcp_gcp": "72512",
+    "formattedNutrition": {
+        "Additional Warnings": "s,
+        California Proposition 65"
     }, 
-    'website': 'www.walmart.com/',
-    'manufacturer': {
-        'company': 'Pentel',
-        'address': None,
-        'phone': None,
-        'address2': None,
-        'city': None,
-        'postal_code': None,
-        'country': None,
-        'contact': None,
-        'state': None
+    "website": "www.walmart.com/",
+    "manufacturer": {
+        "company": "Pentel",
+        "address": "None",
+        "phone": "None",
+        "address2": "None",
+        "city": "None",
+        "postal_code": "None",
+        "country": "None",
+        "contact": "None",
+        "state": "None"
     },
-    'ingredients': 'Warnings:,
+    "ingredients": "Warnings:,
     California Proposition 65 Warning: , 
-    WARNING: This product contains chemicals known to the State of California to cause cancer andbirth defects or other reproductive harm.', 
-    'gcp': {
-        'state': 'CA', 
-        'contact': None, 
-        'fax': None, 
-        'country': 'US', 
-        'gln': '72512000014', 
-        'postal_code': '90503',
-        'city': 'Torrance', 
-        'gcp': '0072512', 
-        'phone': '(310) 533-0697', 
-        'address': '2715 Columbia Street', 
-        'company': 'Pentel of America, Ltd.', 
-        'address2': None
+    WARNING: This product contains chemicals known to the State of California to cause cancer andbirth defects or other reproductive harm.", 
+    "gcp": {
+        "state": "CA", 
+        "contact": "None", 
+        "fax": "None", 
+        "country": "US", 
+        "gln": "72512000014", 
+        "postal_code": "90503",
+        "city": "Torrance", 
+        "gcp": "0072512", 
+        "phone": "(310) 533-0697", 
+        "address": "2715 Columbia Street", 
+        "company": "Pentel of America, Ltd.", 
+        "address2": "None"
     }, 
-    'return_code': '000', 
-    'brand': 'Pentel', 
-    'product_web_page': 'https://www.walmart.com/ip/Pentel-Twist-Erase-III-Mechanical-Pencil-0-9mm-Black-Barrel/15066684', 
-    'uom': '0.9 MM, Each', 
-    'directions': 'http://www.digit-eyes.com/cgi-bin/digiteyes.fcgi?action=quickScan&k=/6m7uZQA2qX2&iP=3&upcCode=0072512099681&l=en', 
-    'description': 'Pentel Twist-erase Iii Mechanical Pencil, (0.9MM), Black Barrel', 
-    'nutrition': None, 
-    'usage': 
-    'Refillable and retractable automatic pencil Jumbo eraser is 1-1/4\\.', 
-    'image': 'https://i5.walmartimages.com/asr/e06a3bbd-4a0f-4e3e-9db3-dd763f86a8e2_1.46dca7d25d96f85eec41784b9040c92e.jpeg'}
+    "return_code": "000", 
+    "brand": "Pentel", 
+    "product_web_page": "https://www.walmart.com/ip/Pentel-Twist-Erase-III-Mechanical-Pencil-0-9mm-Black-Barrel/15066684", 
+    "uom": "0.9 MM, Each", 
+    "directions": "http://www.digit-eyes.com/cgi-bin/digiteyes.fcgi?action=quickScan&k=/6m7uZQA2qX2&iP=3&upcCode=0072512099681&l=en", 
+    "description": "Pentel Twist-erase Iii Mechanical Pencil, (0.9MM), Black Barrel", 
+    "nutrition": "None", 
+    "usage": 
+    "Refillable and retractable automatic pencil Jumbo eraser is 1-1/4\\.", 
+    "image": "https://i5.walmartimages.com/asr/e06a3bbd-4a0f-4e3e-9db3-dd763f86a8e2_1.46dca7d25d96f85eec41784b9040c92e.jpeg"
+}
