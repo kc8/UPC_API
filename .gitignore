@@ -1,6 +1,12 @@
 #CUSTOM FILES
+
+#Ignore the secrets file. Please create your own, instructions in read me
 secrets.json
 
+#ignore Windows venv
+lists/ 
+
+.vscode/
 
 #TEMPLATE OUTLINE BELOW:
 # Byte-compiled / optimized / DLL files
