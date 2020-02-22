@@ -24,6 +24,10 @@ class BarcodeQuery:
                 setup_keys_with_file=False,
                 file_location="./"
                 ):
+        """
+        Query the Digit Eyes UPC database to query a UPC/barcode. 
+        
+        """
         self.auth_key = auth_key
         self.app_key = app_key
         self.use_secrets_file = setup_keys_with_file
