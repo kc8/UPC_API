@@ -1,14 +1,14 @@
 import os.path
-from setuptools import setup
+from setuptools import setup, find_packages
 
+#To-Do Finish the read me
 HERE = os.path.abspath(os.path.dirname(__file__))
-
 with open(os.path.join(HERE, "README.md")) as fid:
     README = fid.read()
 
 setup(
-    name="query",
-    version="0.1",
+    name="upc_query",
+    version="0.2.6",
     description="Python wrapper for Querying Digit Eyes UPC Database",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -19,10 +19,9 @@ setup(
     classifiers=[
         "Programming Language :: Python :: 3",
     ],
-    packages=["upc_query"],
+    packages=find_packages(), #Use setup tools to discover packages, requires __init__.py in each pkg
     include_package_data=True,
     install_requires=[
         "requests",
     ],
-    entry_points={"console_scripts": ["upc_query=upc_query.__main__:main"]},
 )

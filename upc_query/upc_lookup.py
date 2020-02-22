@@ -1,6 +1,6 @@
 import requests, os, json, base64, hashlib, hmac, logging
 from requests.exceptions import HTTPError
-from item import Item
+from .item import Item
 
 """
 Module uses the UPC Database to query for items. Information 
@@ -36,8 +36,12 @@ class BarcodeQuery:
         if setup_keys_with_file == True:
             self.app_key = self._set_secret_with_file('app_key')
             self.auth_key = self._set_secret_with_file('auth_key')
+    
+    # To-D0: implement str method that returns if a valid query object? 
+    def __str__(self):
+        return "Query Object"
 
-
+        
     def _config_logging_for_barcode(self, status=True, level='warning'):
         """
         Configures logigng. Defaul is on and set to warning level. Places log in current file. Can be overriden or change if need.
@@ -126,5 +130,3 @@ class BarcodeQuery:
             return Item("Invalid Item")
         else:
             return self._create_item_object(response.json())
-
-query  = BarcodeQuery(setup_keys_with_file=True, file_location='./secrets.json')

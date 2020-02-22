@@ -46,6 +46,8 @@ class Item:
         """
         pass
 
+    def __str__(self): 
+        return self.name
 
     def set_price(self, price): 
         """
@@ -74,7 +76,7 @@ class Item:
         self.category = new_category 
     
     
-    def calculate_tax(self, tax_percent):
+    def calculate_tax(self, float: tax_percent):
         """
         Returns calculated tax and stores its. Price must be set first
         :args: Tax percent in decimal form
