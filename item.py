@@ -12,7 +12,7 @@ class Item:
                 category='unknown', 
                 size=None):
         """
-        Creates an item object.
+        Creates an item object with some varius information. 
         :args:
             name: Name of the item
             upc: UPC of item for additional lookups default is None. 
@@ -28,15 +28,25 @@ class Item:
         self.size = size
         self.tax = None
     
+
     def __iter__(self):
         """
-        Dunder iter functoin. Not yet fully implemented
+        Not yet implemented
         """
         pass
 
+
     def __next__(self): 
         pass
-    
+
+
+    def __eq__(self, comp_item): 
+        """
+        Not yet implemented.
+        """
+        pass
+
+
     def set_price(self, price): 
         """
         Updates or sets the price of the item
@@ -45,6 +55,7 @@ class Item:
         """
         self.price = price
     
+
     def updapte_alias(self, new_alias):
         """
         Update the alias or nick-name for the item
@@ -61,6 +72,7 @@ class Item:
             new_category: Change the category of the item.
         """
         self.category = new_category 
+    
     
     def calculate_tax(self, tax_percent):
         """

@@ -4,7 +4,7 @@
 secrets.json
 
 #ignore venv in the future can remove this comment for it to be ignored
-#lists/ 
+lists/ 
 
 # Other settings and files to ignore
 .vscode/
