@@ -76,7 +76,7 @@ class Item:
         self.category = new_category 
     
     
-    def calculate_tax(self, float: tax_percent):
+    def calculate_tax(self, tax_percent: float):
         """
         Returns calculated tax and stores its. Price must be set first
         :args: Tax percent in decimal form

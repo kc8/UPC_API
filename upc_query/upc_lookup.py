@@ -53,7 +53,7 @@ class BarcodeQuery:
             return "Logging for product API is off"
 
 
-    def _set_secret_with_file(self, search_term):
+    def _set_secret_with_file(self, search_term: str):
         """
         Gets a key from a secrets JSON file. 
         File needs to be located in same directory.
@@ -75,7 +75,7 @@ class BarcodeQuery:
             return "Using files options to setup keys failed, please check secrets file" 
 
     # To-Do. Create custom exceptions/errors for calculating the signature
-    def _calc_signature(self, upc_code):
+    def _calc_signature(self, upc_code: str):
         """
         Calculates the hash value according to the digit-eyes API
         :args:
@@ -91,7 +91,7 @@ class BarcodeQuery:
         return base64.b64encode(sha_hash.digest()).decode("utf-8") # Decode or there will be a leading b' representing bytes
 
 
-    def _create_item_object(self, item):
+    def _create_item_object(self, item: Item):
         """
         Creates an Item object out of the given request data
         Due to API limitations only creates an object with name and UPC
@@ -106,8 +106,11 @@ class BarcodeQuery:
         
         return product
 
-    # TO-D0. Check if valid UPC before we query the API
-    def lookup(self, item):
+    # TO-DO: Check if valid UPC before we query the API. 
+    # TO DO: Can we decouple the Item from UPC Lookup?
+    # To-DO URL to use .join from string and a tuple so it is not mutable. 
+    # TO-DOMove url outside of this fucntion, have it passed in. 
+    def lookup(self, item: Item) -> Item:
         """
         Queries the DB for the item using Digit Eyes API
         This returns an item object. 

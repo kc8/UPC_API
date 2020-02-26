@@ -8,7 +8,8 @@ with open(os.path.join(HERE, "README.md")) as fid:
 
 setup(
     name="upc_query",
-    version="0.2.6",
+    version="0.3.1",
+    python_requires='>3.8.2',
     description="Python wrapper for Querying Digit Eyes UPC Database",
     long_description=README,
     long_description_content_type="text/markdown",
